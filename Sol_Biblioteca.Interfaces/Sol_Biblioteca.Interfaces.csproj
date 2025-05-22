@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D09300EE-A8B4-4260-A27D-16175E8994C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sol_Biblioteca.Interfaces</RootNamespace>
+    <AssemblyName>Sol_Biblioteca.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Activos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Activos.Designer.cs">
+      <DependentUpon>Form_Activos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Biblioteca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Biblioteca.Designer.cs">
+      <DependentUpon>Form_Biblioteca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Contabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Contabilidad.Designer.cs">
+      <DependentUpon>Form_Contabilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Dashboard.Designer.cs">
+      <DependentUpon>Form_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Facturacion.Designer.cs">
+      <DependentUpon>Form_Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Nomina1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Nomina1.Designer.cs">
+      <DependentUpon>Form_Nomina1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Activos.resx">
+      <DependentUpon>Form_Activos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Biblioteca.resx">
+      <DependentUpon>Form_Biblioteca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Contabilidad.resx">
+      <DependentUpon>Form_Contabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Dashboard.resx">
+      <DependentUpon>Form_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Facturacion.resx">
+      <DependentUpon>Form_Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Nomina1.resx">
+      <DependentUpon>Form_Nomina1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sol_Biblioteca.Entidades\Sol_Biblioteca.Entidades.csproj">
+      <Project>{9dbad504-9e8e-4896-8975-7192118b3548}</Project>
+      <Name>Sol_Biblioteca.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sol_Biblioteca.Negocio\Sol_Biblioteca.Negocio.csproj">
+      <Project>{ce04227b-d860-4c61-b893-b9b7764bff57}</Project>
+      <Name>Sol_Biblioteca.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biblioteca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dividirCuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
