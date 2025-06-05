@@ -55,7 +55,7 @@
             this.Pnl_nomina.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_nomina.Location = new System.Drawing.Point(0, 0);
             this.Pnl_nomina.Name = "Pnl_nomina";
-            this.Pnl_nomina.Size = new System.Drawing.Size(1067, 50);
+            this.Pnl_nomina.Size = new System.Drawing.Size(1085, 50);
             this.Pnl_nomina.TabIndex = 1;
             // 
             // label1
@@ -73,11 +73,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 56);
+            this.tabControl1.Location = new System.Drawing.Point(14, 56);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(915, 590);
+            this.tabControl1.Size = new System.Drawing.Size(932, 639);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -87,7 +87,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(889, 561);
+            this.tabPage1.Size = new System.Drawing.Size(924, 610);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ver";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -167,7 +167,7 @@
             this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Salir.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Salir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Salir.Location = new System.Drawing.Point(933, 502);
+            this.Btn_Salir.Location = new System.Drawing.Point(956, 520);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(122, 132);
             this.Btn_Salir.TabIndex = 9;
@@ -181,7 +181,7 @@
             this.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Eliminar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Eliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(933, 364);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(956, 382);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
             this.Btn_Eliminar.Size = new System.Drawing.Size(122, 132);
             this.Btn_Eliminar.TabIndex = 8;
@@ -195,7 +195,7 @@
             this.Btn_Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Actualizar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Actualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Actualizar.Location = new System.Drawing.Point(933, 226);
+            this.Btn_Actualizar.Location = new System.Drawing.Point(956, 244);
             this.Btn_Actualizar.Name = "Btn_Actualizar";
             this.Btn_Actualizar.Size = new System.Drawing.Size(122, 132);
             this.Btn_Actualizar.TabIndex = 7;
@@ -209,7 +209,7 @@
             this.Btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Nuevo.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Nuevo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Nuevo.Location = new System.Drawing.Point(933, 88);
+            this.Btn_Nuevo.Location = new System.Drawing.Point(956, 106);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
             this.Btn_Nuevo.Size = new System.Drawing.Size(122, 132);
             this.Btn_Nuevo.TabIndex = 6;
@@ -221,7 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1067, 657);
+            this.ClientSize = new System.Drawing.Size(1085, 704);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Eliminar);
             this.Controls.Add(this.Btn_Actualizar);
@@ -230,7 +230,7 @@
             this.Controls.Add(this.Pnl_nomina);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Activos";
-            this.Text = "Form_Activos";
+            this.Text = " ";
             this.Pnl_nomina.ResumeLayout(false);
             this.Pnl_nomina.PerformLayout();
             this.tabControl1.ResumeLayout(false);

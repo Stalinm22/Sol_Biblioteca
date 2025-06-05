@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormNuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNuevoUsuario.Designer.cs">
+      <DependentUpon>FormNuevoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Activos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +94,12 @@
     <Compile Include="Form_Nomina1.Designer.cs">
       <DependentUpon>Form_Nomina1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OracleConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormNuevoUsuario.resx">
+      <DependentUpon>FormNuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Activos.resx">
       <DependentUpon>Form_Activos.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,10 +145,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sol_Biblioteca.Entidades\Sol_Biblioteca.Entidades.csproj">
-      <Project>{9dbad504-9e8e-4896-8975-7192118b3548}</Project>
-      <Name>Sol_Biblioteca.Entidades</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sol_Biblioteca.Negocio\Sol_Biblioteca.Negocio.csproj">
       <Project>{ce04227b-d860-4c61-b893-b9b7764bff57}</Project>
       <Name>Sol_Biblioteca.Negocio</Name>

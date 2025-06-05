@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sol_Biblioteca.Negocio;
 
 namespace Sol_Biblioteca.Interfaces
 {
@@ -103,6 +104,22 @@ namespace Sol_Biblioteca.Interfaces
             // Agrega el formulario al panel y lo muestra
             Pnl_visualizar_Formularios.Controls.Add(formBiblioteca);
             formBiblioteca.Show();
+        }
+
+        private void Btn_crearUsuario_Click(object sender, EventArgs e)
+        {
+            // Limpia el panel antes de mostrar el nuevo formulario
+            Pnl_visualizar_Formularios.Controls.Clear();
+
+            // Crea una instancia del formulario que quieres mostrar
+            FormNuevoUsuario formNuevoUsuario = new FormNuevoUsuario();
+            formNuevoUsuario.TopLevel = false;
+            formNuevoUsuario.FormBorderStyle = FormBorderStyle.None;
+            formNuevoUsuario.Dock = DockStyle.Fill;
+
+            // Agrega el formulario al panel y lo muestra
+            Pnl_visualizar_Formularios.Controls.Add(formNuevoUsuario);
+            formNuevoUsuario.Show();
         }
     }
 }

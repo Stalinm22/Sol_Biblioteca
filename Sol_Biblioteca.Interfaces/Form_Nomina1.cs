@@ -21,5 +21,10 @@ namespace Sol_Biblioteca.Interfaces
         {
 
         }
+
+        private void Btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
