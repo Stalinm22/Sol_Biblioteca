@@ -79,6 +79,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="D_autores.cs" />
+    <Compile Include="D_libros.cs" />
     <Compile Include="D_login.cs" />
     <Compile Include="D_usuario.cs" />
     <Compile Include="D_usuarios.cs" />
@@ -93,6 +95,12 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sol_Biblioteca.Entidades\Sol_Biblioteca.Entidades.csproj">
+      <Project>{9dbad504-9e8e-4896-8975-7192118b3548}</Project>
+      <Name>Sol_Biblioteca.Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

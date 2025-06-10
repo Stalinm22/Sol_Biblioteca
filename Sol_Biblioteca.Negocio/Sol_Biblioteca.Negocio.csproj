@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="N_autores.cs" />
+    <Compile Include="N_libros.cs" />
     <Compile Include="N_login.cs" />
     <Compile Include="N_usuario.cs" />
     <Compile Include="N_usuarios.cs" />
@@ -53,6 +55,10 @@
     <ProjectReference Include="..\Sol_Biblioteca.Datos\Sol_Biblioteca.Datos.csproj">
       <Project>{ec8ef8d8-a033-4617-a9ef-1974c73e950a}</Project>
       <Name>Sol_Biblioteca.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sol_Biblioteca.Entidades\Sol_Biblioteca.Entidades.csproj">
+      <Project>{9dbad504-9e8e-4896-8975-7192118b3548}</Project>
+      <Name>Sol_Biblioteca.Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
