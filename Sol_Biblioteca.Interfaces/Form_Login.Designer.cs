@@ -68,7 +68,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Sol_Biblioteca.Interfaces.Properties.Resources.biblioteca;
+            this.pictureBox1.Image = null;//::Sol_Biblioteca.Interfaces.Properties.Resources.biblioteca;
             this.pictureBox1.Location = new System.Drawing.Point(41, 60);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";

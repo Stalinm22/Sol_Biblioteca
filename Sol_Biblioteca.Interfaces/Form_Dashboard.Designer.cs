@@ -29,8 +29,16 @@
         private void InitializeComponent()
         {
             this.Pnl_menu = new System.Windows.Forms.Panel();
+HEAD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_cerrar_dashboard = new System.Windows.Forms.Button();
+
+            this.Btn_nomina = new System.Windows.Forms.Button();
+            this.Btn_contabilidad = new System.Windows.Forms.Button();
+            this.Btn_Facturacion = new System.Windows.Forms.Button();
+            this.Btn_Activos = new System.Windows.Forms.Button();
+            this.Btn_Activos.Click += new System.EventHandler(this.Btn_Activos_Click);
+ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             this.Btn_Biblioteca = new System.Windows.Forms.Button();
             this.Btn_Activos = new System.Windows.Forms.Button();
             this.Btn_Facturacion = new System.Windows.Forms.Button();
@@ -196,6 +204,7 @@
             // 
             // Btn_crearUsuario
             // 
+HEAD
             this.Btn_crearUsuario.BackColor = System.Drawing.Color.LimeGreen;
             this.Btn_crearUsuario.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_crearUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -206,6 +215,15 @@
             this.Btn_crearUsuario.Text = "crear nuevo usuario";
             this.Btn_crearUsuario.UseVisualStyleBackColor = false;
             this.Btn_crearUsuario.Click += new System.EventHandler(this.Btn_crearUsuario_Click);
+
+            this.pictureBox1.Image = null;//::Sol_Biblioteca.Interfaces.Properties.Resources.biblioteca;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(302, 183);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+ ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             // 
             // Form_Dashboard
             // 

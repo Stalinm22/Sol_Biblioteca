@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliotecaActivos;
+using Sol_Biblioteca.Interfaces.Activos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,19 +78,21 @@ namespace Sol_Biblioteca.Interfaces
 
         private void Btn_Activos_Click(object sender, EventArgs e)
         {
-            // Limpia el panel antes de mostrar el nuevo formulario
-            Pnl_visualizar_Formularios.Controls.Clear();
-
-            // Crea una instancia del formulario que quieres mostrar
-            Form_Activos formActivos = new Form_Activos();
-            formActivos.TopLevel = false;
-            formActivos.FormBorderStyle = FormBorderStyle.None;
-            formActivos.Dock = DockStyle.Fill;
-
-            // Agrega el formulario al panel y lo muestra
-            Pnl_visualizar_Formularios.Controls.Add(formActivos);
-            formActivos.Show();
+            using (var loginForm = new LoginForm())
+            {
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    // Usuario autenticado correctamente
+                    Form_Activos formActivos = new Form_Activos();
+                    formActivos.ShowDialog();
+                }
+            }
         }
+
+
+
+
+
 
         private void Btn_Biblioteca_Click(object sender, EventArgs e)
         {

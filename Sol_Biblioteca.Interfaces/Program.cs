@@ -16,7 +16,21 @@ namespace Sol_Biblioteca.Interfaces
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Login());
+
+            // Mostrar el formulario de login como diálogo
+            using (var loginForm = new Form_Login())
+            {
+                // Si el login fue exitoso (OK), iniciar Form_Activos como formulario principal
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new Form_Activos());
+                }
+                else
+                {
+                    // Si no fue OK, cerrar la aplicación (cancelado o fallido)
+                    Application.Exit();
+                }
+            }
         }
     }
 }

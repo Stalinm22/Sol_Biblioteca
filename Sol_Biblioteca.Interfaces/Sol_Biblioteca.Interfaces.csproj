@@ -33,8 +33,48 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.23.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.23.8.0\lib\net472\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.2\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.1\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,12 +86,124 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+ HEAD
     <Compile Include="FormNuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormNuevoUsuario.Designer.cs">
       <DependentUpon>FormNuevoUsuario.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="BibliotecaActivos\datos\ConexionOracle.cs" />
+    <Compile Include="BibliotecaActivos\entidad\Enums.cs" />
+    <Compile Include="BibliotecaActivos\FormGestionDepreciaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormGestionDepreciaciones.Designer.cs">
+      <DependentUpon>FormGestionDepreciaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\persistencia\DepreciacionDAO.cs" />
+    <Compile Include="BibliotecaActivos\entidad\Auditoria_Guamialama_ENT.cs" />
+    <Compile Include="BibliotecaActivos\entidad\DepreciacionCabecera.cs" />
+    <Compile Include="BibliotecaActivos\entidad\DepreciacionDetalle.cs" />
+    <Compile Include="BibliotecaActivos\entidad\TipoActivo.cs" />
+    <Compile Include="BibliotecaActivos\FormAuditoria.cs" />
+    <Compile Include="BibliotecaActivos\FormAuditoria.Designer.cs">
+      <DependentUpon>FormAuditoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\datos\RepositorioActivos.cs" />
+    <Compile Include="BibliotecaActivos\entidad\Activo.cs" />
+    <Compile Include="BibliotecaActivos\entidad\EquipoInformatico.cs" />
+    <Compile Include="BibliotecaActivos\entidad\Libro.cs" />
+    <Compile Include="BibliotecaActivos\FormDepreciacionMoviliario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionMoviliario.Designer.cs">
+      <DependentUpon>FormDepreciacionMoviliario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionEquiposInformaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionEquiposInformaticos.Designer.cs">
+      <DependentUpon>FormDepreciacionEquiposInformaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionLibros.Designer.cs">
+      <DependentUpon>FormDepreciacionLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionMaterialAudioVisual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionMaterialAudioVisual.Designer.cs">
+      <DependentUpon>FormDepreciacionMaterialAudioVisual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormDepreciacionVehiculos.Designer.cs">
+      <DependentUpon>FormDepreciacionVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormEquiposInformaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormEquiposInformaticos.Designer.cs">
+      <DependentUpon>FormEquiposInformaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormEstadoActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormEstadoActivo.Designer.cs">
+      <DependentUpon>FormEstadoActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormLibros.Designer.cs">
+      <DependentUpon>FormLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormReporteActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormReporteActivos.Designer.cs">
+      <DependentUpon>FormReporteActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormReporteLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormReporteLibros.Designer.cs">
+      <DependentUpon>FormReporteLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormReporteLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormReporteLogs.Designer.cs">
+      <DependentUpon>FormReporteLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormUbicacionActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\FormUbicacionActivo.Designer.cs">
+      <DependentUpon>FormUbicacionActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BibliotecaActivos\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaActivos\Program.cs" />
+    <Compile Include="BibliotecaActivos\utils\Logger.cs" />
+    <Compile Include="BibliotecaActivos\utils\LogHelper.cs" />
+    <Compile Include="BibliotecaActivos\utils\Utilidades.cs" />
+ ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
     <Compile Include="Form_Activos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +246,32 @@
     <Compile Include="Form_Nomina1.Designer.cs">
       <DependentUpon>Form_Nomina1.cs</DependentUpon>
     </Compile>
+ HEAD
     <Compile Include="OracleConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormNuevoUsuario.resx">
       <DependentUpon>FormNuevoUsuario.cs</DependentUpon>
+
+    <Compile Include="negocio\Auditoria_Guamialama_NEG.cs" />
+    <Compile Include="negocio\DepreciacionNegocio.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BibliotecaActivos\FormEquiposInformaticos.resx">
+      <DependentUpon>FormEquiposInformaticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BibliotecaActivos\FormReporteActivos.resx">
+      <DependentUpon>FormReporteActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BibliotecaActivos\FormReporteLogs.resx">
+      <DependentUpon>FormReporteLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BibliotecaActivos\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BibliotecaActivos\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+ ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Activos.resx">
       <DependentUpon>Form_Activos.cs</DependentUpon>
@@ -131,6 +304,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BibliotecaActivos\App.config" />
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,6 +326,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+ HEAD
+
+    <ProjectReference Include="..\Sol_Biblioteca.Datos\Sol_Biblioteca.Datos.csproj">
+      <Project>{ec8ef8d8-a033-4617-a9ef-1974c73e950a}</Project>
+      <Name>Sol_Biblioteca.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sol_Biblioteca.Entidades\Sol_Biblioteca.Entidades.csproj">
+      <Project>{9dbad504-9e8e-4896-8975-7192118b3548}</Project>
+      <Name>Sol_Biblioteca.Entidades</Name>
+    </ProjectReference>
+ ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
     <ProjectReference Include="..\Sol_Biblioteca.Negocio\Sol_Biblioteca.Negocio.csproj">
       <Project>{ce04227b-d860-4c61-b893-b9b7764bff57}</Project>
       <Name>Sol_Biblioteca.Negocio</Name>

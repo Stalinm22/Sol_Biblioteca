@@ -2,15 +2,21 @@
 {
     partial class Form_Activos
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.ComboBox cmbUbicacion;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnVerReporteLogs;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Label lblUbicacion;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.ComboBox cmbDepresicaciones;
+        private System.Windows.Forms.Label lblDepresicaciones;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,36 +26,28 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.Pnl_nomina = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Btn_Retornar = new System.Windows.Forms.Button();
-            this.Btn_buscar = new System.Windows.Forms.Button();
-            this.text_Buscar = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Btn_Salir = new System.Windows.Forms.Button();
-            this.Btn_Eliminar = new System.Windows.Forms.Button();
-            this.Btn_Actualizar = new System.Windows.Forms.Button();
-            this.Btn_Nuevo = new System.Windows.Forms.Button();
-            this.Pnl_nomina.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.cmbUbicacion = new System.Windows.Forms.ComboBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnVerReporteLogs = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblUbicacion = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.lblDepresicaciones = new System.Windows.Forms.Label();
+            this.cmbDepresicaciones = new System.Windows.Forms.ComboBox();
+            this.btnGestionDepreciaciones = new System.Windows.Forms.Button();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Pnl_nomina
+            // cmbCategoria
             // 
+HEAD
             this.Pnl_nomina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(124)))), ((int)(((byte)(57)))));
             this.Pnl_nomina.Controls.Add(this.label1);
             this.Pnl_nomina.Dock = System.Windows.Forms.DockStyle.Top;
@@ -57,20 +55,30 @@
             this.Pnl_nomina.Name = "Pnl_nomina";
             this.Pnl_nomina.Size = new System.Drawing.Size(1085, 50);
             this.Pnl_nomina.TabIndex = 1;
+
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(30, 76);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(300, 33);
+            this.cmbCategoria.TabIndex = 0;
+            this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.cmbCategoria_SelectedIndexChanged);
+ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             // 
-            // label1
+            // cmbEstado
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(491, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Activos";
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(30, 152);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(300, 33);
+            this.cmbEstado.TabIndex = 1;
             // 
-            // tabControl1
+            // cmbUbicacion
             // 
+HEAD
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(14, 56);
@@ -79,9 +87,19 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(932, 639);
             this.tabControl1.TabIndex = 2;
+
+            this.cmbUbicacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUbicacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbUbicacion.FormattingEnabled = true;
+            this.cmbUbicacion.Location = new System.Drawing.Point(30, 229);
+            this.cmbUbicacion.Name = "cmbUbicacion";
+            this.cmbUbicacion.Size = new System.Drawing.Size(300, 33);
+            this.cmbUbicacion.TabIndex = 2;
+ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             // 
-            // tabPage1
+            // btnBuscar
             // 
+HEAD
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -91,77 +109,102 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ver";
             this.tabPage1.UseVisualStyleBackColor = true;
+
+            this.btnBuscar.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(13, 352);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(120, 35);
+            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "🔍 Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnBuscar.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonRounded_Paint);
+ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             // 
-            // label2
+            // btnSalir
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(165, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.btnSalir.BackColor = System.Drawing.Color.Crimson;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(126, 449);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(120, 35);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "❌ Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnSalir.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonRounded_Paint);
             // 
-            // tabPage2
+            // btnVerReporteLogs
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Silver;
-            this.tabPage2.Controls.Add(this.Btn_Retornar);
-            this.tabPage2.Controls.Add(this.Btn_buscar);
-            this.tabPage2.Controls.Add(this.text_Buscar);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(907, 561);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Buscar/Visualizar";
+            this.btnVerReporteLogs.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnVerReporteLogs.FlatAppearance.BorderSize = 0;
+            this.btnVerReporteLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerReporteLogs.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnVerReporteLogs.ForeColor = System.Drawing.Color.White;
+            this.btnVerReporteLogs.Location = new System.Drawing.Point(175, 353);
+            this.btnVerReporteLogs.Name = "btnVerReporteLogs";
+            this.btnVerReporteLogs.Size = new System.Drawing.Size(170, 35);
+            this.btnVerReporteLogs.TabIndex = 4;
+            this.btnVerReporteLogs.Text = "📊 Ver Reporte Logs";
+            this.btnVerReporteLogs.UseVisualStyleBackColor = false;
+            this.btnVerReporteLogs.Click += new System.EventHandler(this.btnVerReporteLogs_Click);
+            this.btnVerReporteLogs.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonRounded_Paint);
             // 
-            // Btn_Retornar
+            // lblTitulo
             // 
-            this.Btn_Retornar.BackColor = System.Drawing.Color.Navy;
-            this.Btn_Retornar.FlatAppearance.BorderSize = 0;
-            this.Btn_Retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Retornar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Retornar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Retornar.Location = new System.Drawing.Point(586, 20);
-            this.Btn_Retornar.Name = "Btn_Retornar";
-            this.Btn_Retornar.Size = new System.Drawing.Size(140, 107);
-            this.Btn_Retornar.TabIndex = 3;
-            this.Btn_Retornar.Text = "Regresar";
-            this.Btn_Retornar.UseVisualStyleBackColor = false;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(70, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(251, 45);
+            this.lblTitulo.TabIndex = 6;
+            this.lblTitulo.Text = "Activos - ENGH";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Btn_buscar
+            // lblCategoria
             // 
-            this.Btn_buscar.BackColor = System.Drawing.Color.YellowGreen;
-            this.Btn_buscar.FlatAppearance.BorderSize = 0;
-            this.Btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_buscar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_buscar.Location = new System.Drawing.Point(445, 20);
-            this.Btn_buscar.Name = "Btn_buscar";
-            this.Btn_buscar.Size = new System.Drawing.Size(140, 107);
-            this.Btn_buscar.TabIndex = 2;
-            this.Btn_buscar.Text = "Buscar";
-            this.Btn_buscar.UseVisualStyleBackColor = false;
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblCategoria.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblCategoria.Location = new System.Drawing.Point(25, 32);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(108, 28);
+            this.lblCategoria.TabIndex = 7;
+            this.lblCategoria.Text = "Categoría:";
             // 
-            // text_Buscar
+            // lblEstado
             // 
-            this.text_Buscar.Location = new System.Drawing.Point(139, 62);
-            this.text_Buscar.Name = "text_Buscar";
-            this.text_Buscar.Size = new System.Drawing.Size(263, 23);
-            this.text_Buscar.TabIndex = 1;
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblEstado.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblEstado.Location = new System.Drawing.Point(25, 112);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(80, 28);
+            this.lblEstado.TabIndex = 8;
+            this.lblEstado.Text = "Estado:";
             // 
-            // label3
+            // lblUbicacion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Buscar:";
+            this.lblUbicacion.AutoSize = true;
+            this.lblUbicacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblUbicacion.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblUbicacion.Location = new System.Drawing.Point(23, 188);
+            this.lblUbicacion.Name = "lblUbicacion";
+            this.lblUbicacion.Size = new System.Drawing.Size(110, 28);
+            this.lblUbicacion.TabIndex = 9;
+            this.lblUbicacion.Text = "Ubicación:";
             // 
-            // Btn_Salir
+            // panelMain
             // 
+HEAD
             this.Btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(87)))), ((int)(((byte)(0)))));
             this.Btn_Salir.FlatAppearance.BorderSize = 0;
             this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -173,9 +216,31 @@
             this.Btn_Salir.TabIndex = 9;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = false;
+
+            this.panelMain.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.btnGestionDepreciaciones);
+            this.panelMain.Controls.Add(this.lblTitulo);
+            this.panelMain.Controls.Add(this.lblCategoria);
+            this.panelMain.Controls.Add(this.cmbCategoria);
+            this.panelMain.Controls.Add(this.lblEstado);
+            this.panelMain.Controls.Add(this.cmbEstado);
+            this.panelMain.Controls.Add(this.lblUbicacion);
+            this.panelMain.Controls.Add(this.cmbUbicacion);
+            this.panelMain.Controls.Add(this.lblDepresicaciones);
+            this.panelMain.Controls.Add(this.cmbDepresicaciones);
+            this.panelMain.Controls.Add(this.btnBuscar);
+            this.panelMain.Controls.Add(this.btnVerReporteLogs);
+            this.panelMain.Controls.Add(this.btnSalir);
+            this.panelMain.Location = new System.Drawing.Point(146, 131);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(369, 504);
+            this.panelMain.TabIndex = 0;
+ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             // 
-            // Btn_Eliminar
+            // lblDepresicaciones
             // 
+HEAD
             this.Btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(58)))), ((int)(((byte)(0)))));
             this.Btn_Eliminar.FlatAppearance.BorderSize = 0;
             this.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -187,9 +252,20 @@
             this.Btn_Eliminar.TabIndex = 8;
             this.Btn_Eliminar.Text = "Eliminar";
             this.Btn_Eliminar.UseVisualStyleBackColor = false;
+
+            this.lblDepresicaciones.AutoSize = true;
+            this.lblDepresicaciones.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblDepresicaciones.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblDepresicaciones.Location = new System.Drawing.Point(25, 271);
+            this.lblDepresicaciones.Name = "lblDepresicaciones";
+            this.lblDepresicaciones.Size = new System.Drawing.Size(170, 28);
+            this.lblDepresicaciones.TabIndex = 10;
+            this.lblDepresicaciones.Text = "Depresicaciones:";
+ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             // 
-            // Btn_Actualizar
+            // cmbDepresicaciones
             // 
+ HEAD
             this.Btn_Actualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(29)))), ((int)(((byte)(0)))));
             this.Btn_Actualizar.FlatAppearance.BorderSize = 0;
             this.Btn_Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -201,9 +277,19 @@
             this.Btn_Actualizar.TabIndex = 7;
             this.Btn_Actualizar.Text = "Actualizar";
             this.Btn_Actualizar.UseVisualStyleBackColor = false;
+
+            this.cmbDepresicaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDepresicaciones.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbDepresicaciones.FormattingEnabled = true;
+            this.cmbDepresicaciones.Location = new System.Drawing.Point(30, 302);
+            this.cmbDepresicaciones.Name = "cmbDepresicaciones";
+            this.cmbDepresicaciones.Size = new System.Drawing.Size(300, 33);
+            this.cmbDepresicaciones.TabIndex = 11;
+ ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             // 
-            // Btn_Nuevo
+            // btnGestionDepreciaciones
             // 
+ HEAD
             this.Btn_Nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Btn_Nuevo.FlatAppearance.BorderSize = 0;
             this.Btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -238,25 +324,51 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+
+            this.btnGestionDepreciaciones.BackColor = System.Drawing.Color.Purple;
+            this.btnGestionDepreciaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionDepreciaciones.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnGestionDepreciaciones.ForeColor = System.Drawing.Color.White;
+            this.btnGestionDepreciaciones.Location = new System.Drawing.Point(30, 394);
+            this.btnGestionDepreciaciones.Name = "btnGestionDepreciaciones";
+            this.btnGestionDepreciaciones.Size = new System.Drawing.Size(300, 49);
+            this.btnGestionDepreciaciones.TabIndex = 4;
+            this.btnGestionDepreciaciones.Text = "📊Gestión de Depreciaciones";
+            this.btnGestionDepreciaciones.UseVisualStyleBackColor = false;
+            this.btnGestionDepreciaciones.Click += new System.EventHandler(this.btnGestionDepreciaciones_Click);
+            // 
+            // Form_Activos
+            // 
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(662, 720);
+            this.Controls.Add(this.panelMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Form_Activos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Gestión de Activos - ENGH";
+            this.Load += new System.EventHandler(this.Form_Activos_Load);
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+ ff8d4f9 (Subida  de módulo BibliotecaActivos con archivos de configuración, .cs.Designer .resx, y ajustes en formularios,  pagina completa)
             this.ResumeLayout(false);
 
         }
 
-        #endregion
+        // Método para hacer los botones con bordes redondeados
+        private void ButtonRounded_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+            System.Windows.Forms.Button btn = sender as System.Windows.Forms.Button;
+            System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+            int radius = 15; // Radio para bordes redondeados
+            path.AddArc(0, 0, radius, radius, 180, 90);
+            path.AddArc(btn.Width - radius, 0, radius, radius, 270, 90);
+            path.AddArc(btn.Width - radius, btn.Height - radius, radius, radius, 0, 90);
+            path.AddArc(0, btn.Height - radius, radius, radius, 90, 90);
+            path.CloseAllFigures();
+            btn.Region = new System.Drawing.Region(path);
+        }
 
-        private System.Windows.Forms.Panel Pnl_nomina;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button Btn_Retornar;
-        private System.Windows.Forms.Button Btn_buscar;
-        private System.Windows.Forms.TextBox text_Buscar;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button Btn_Salir;
-        private System.Windows.Forms.Button Btn_Eliminar;
-        private System.Windows.Forms.Button Btn_Actualizar;
-        private System.Windows.Forms.Button Btn_Nuevo;
+        private System.Windows.Forms.Button btnGestionDepreciaciones;
     }
 }
